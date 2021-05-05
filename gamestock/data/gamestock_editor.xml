@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="gamestock_editor_ea" model="gamestock.editor">
+			<field name="name">Electronic Arts</field>
+			<field name="creation_date">1982-05-27</field>
+		</record>
+
+		<record id="gamestock_editor_square_enix" model="gamestock.editor">
+			<field name="name">Square Enix</field>
+			<field name="creation_date">1975-09-22</field>
+		</record>
+
+		<record id="gamestock_editor_nintendo" model="gamestock.editor">
+			<field name="name">Nintendo</field>
+			<field name="creation_date">1889-09-23</field>
+		</record>
+
+		<record id="gamestock_editor_sony" model="gamestock.editor">
+			<field name="name">Sony</field>
+			<field name="creation_date">1993-05-07</field>
+		</record>
+
+		<record id="gamestock_editor_ubisoft" model="gamestock.editor">
+			<field name="name">Ubisoft</field>
+			<field name="creation_date">1986-03-12</field>
+		</record>
+	</data>
+</odoo>

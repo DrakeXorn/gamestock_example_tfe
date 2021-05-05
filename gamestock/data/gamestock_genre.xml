@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="gamestock_genre_rpg" model="gamestock.genre">
+			<field name="name">Role Play Game</field>
+			<field name="first_release_date">1982-10-30</field>
+		</record>
+
+		<record id="gamestock_genre_simulation" model="gamestock.genre">
+			<field name="name">Simulation</field>
+			<field name="first_release_date">1984-03-28</field>
+		</record>
+
+		<record id="gamestock_genre_racing" model="gamestock.genre">
+			<field name="name">Racing</field>
+			<field name="first_release_date">1973-12-06</field>
+		</record>
+
+		<record id="gamestock_genre_visual_novel" model="gamestock.genre">
+			<field name="name">Visual Novel</field>
+			<field name="first_release_date">1982-06-20</field>
+		</record>
+	</data>
+</odoo>

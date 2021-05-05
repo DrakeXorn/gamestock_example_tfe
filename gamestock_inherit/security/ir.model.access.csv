@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gamestock_inherit_franchise_access,access_gamestock_franchise,model_gamestock_inherit_franchise,,1,1,1,1

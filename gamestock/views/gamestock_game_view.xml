@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<record id="gamestock_game_view_form" model="ir.ui.view">
+    <field name="name">gamestock.game.view.form</field>
+		<field name="model">gamestock.game</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+						<field name="name" />
+						<field name="developer_id" />
+						<field name="release_date" />
+					</group>
+					<notebook>
+						<page string="Description">
+							<field name="description" />
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="gamestock_game_view_tree" model="ir.ui.view">
+	    <field name="name">gamestock.game.view.tree</field>
+	    <field name="model">gamestock.game</field>
+	    <field name="arch" type="xml">
+		    <tree>
+		        <field name="name" />
+		        <field name="developer_id" />
+		        <field name="release_date" />
+		    </tree>
+	    </field>
+	</record>
+
+	<record id="gamestock_game_editor_view_form" model="ir.ui.view">
+	    <field name="name">gamestock.editor.view.form</field>
+	    <field name="model">gamestock.editor</field>
+	    <field name="arch" type="xml">
+	        <form>
+	            <sheet>
+	                <group>
+	                    <field name="name" />
+	                    <field name="creation_date" />
+	                </group>
+	                <notebook>
+						<page name="Games">
+							<field name="game_ids" />
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+	    </field>
+	</record>
+
+	<record id="gamestock_game_editor_view_tree" model="ir.ui.view">
+		<field name="name">gamestock.editor.view.tree</field>
+		<field name="model">gamestock.editor</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="name" />
+				<field name="creation_date" />
+			</tree>
+		</field>
+	</record>
+
+	<record id="gamestock_game_genre_view_form" model="ir.ui.view">
+		<field name="name">gamestock.genre.view.form</field>
+        <field name="model">gamestock.genre</field>
+	    <field name="arch" type="xml">
+		    <form>
+			    <sheet>
+				    <group>
+					    <field name="name" />
+					    <field name="first_release_date" />
+				    </group>
+				    <notebook>
+					    <page name="Games">
+						    <field name="game_ids" />
+					    </page>
+				    </notebook>
+			    </sheet>
+		    </form>
+	    </field>
+	</record>
+
+	<record id="gamestock_game_genre_view_tree" model="ir.ui.view">
+	    <field name="name">gamestock.editor.view.tree</field>
+	    <field name="model">gamestock.genre</field>
+	    <field name="arch" type="xml">
+		    <tree>
+			    <field name="name" />
+			    <field name="first_release_date" />
+		    </tree>
+	    </field>
+	</record>
+
+	<record id="gamestock_game_action" model="ir.actions.act_window">
+	    <field name="name">Game</field>
+	    <field name="res_model">gamestock.game</field>
+	    <field name="view_mode">tree,form</field>
+	</record>
+
+	<record id="gamestock_genre_action" model="ir.actions.act_window">
+		<field name="name">Genre</field>
+		<field name="res_model">gamestock.genre</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<record id="gamestock_editor_action" model="ir.actions.act_window">
+		<field name="name">Editor</field>
+		<field name="res_model">gamestock.editor</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+	<menuitem id="gamestock_menu_root" name="Gamestock Games" />
+	<menuitem id="games_menu" name="Games" parent="gamestock.gamestock_menu_root" action="gamestock.gamestock_game_action" />
+	<menuitem id="genres_menu" name="Genres" parent="gamestock.gamestock_menu_root" action="gamestock.gamestock_genre_action" />
+	<menuitem id="editors_menu" name="Editors" parent="gamestock.gamestock_menu_root" action="gamestock.gamestock_editor_action" />
+</odoo>

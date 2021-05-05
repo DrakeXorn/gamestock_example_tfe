@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+gamestock_game_access,access_gamestock_game,model_gamestock_game,,1,1,1,1
+gamestock_genre_access,access_gamestock_genre,model_gamestock_genre,,1,1,1,1
+gamestock_editor_access,access_gamestock_editor,model_gamestock_editor,,1,1,1,1
